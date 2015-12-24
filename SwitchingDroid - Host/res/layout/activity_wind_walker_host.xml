@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WindWalkerClientActivity"
+    android:background="#000000" >
+
+    <TextView
+        android:id="@+id/connection_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="connection_info"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/device_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/connection_info"
+        android:text="device_info"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/message_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/device_info"
+        android:text="message_box"
+        android:textColor="#ffffff" 
+        android:layout_marginTop="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/network_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mProgressBar"
+        android:gravity="center"
+        android:text="network_status"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+</RelativeLayout>
